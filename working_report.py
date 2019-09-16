@@ -9,7 +9,6 @@ class Working_Report:
     def all_working(self):
         working_dict = dict()
         with sqlite3.connect(self.db_path) as conn:
-            # conn.row_factory = lambda cursor, row: Exercise(row[1], row[2])
 
             db_cursor = conn.cursor()
 
