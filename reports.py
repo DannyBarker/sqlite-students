@@ -4,6 +4,7 @@ from exercise_report import Exercise_Report
 from instructor_report import Instructor_Report
 from working_report import Working_Report
 from student_workload import Student_Workload
+from cohort_instructs_students import Cohort_Instructs_Students
 
 # Cohort_Report = Cohort_Report()
 # Cohort_Report.all_cohorts()
@@ -20,5 +21,8 @@ from student_workload import Student_Workload
 # Working_Report = Working_Report()
 # Working_Report.all_working()
 
-Student_Workload = Student_Workload()
-Student_Workload.student_practices()
+# Student_Workload = Student_Workload()
+# Student_Workload.student_practices()
+
+Cohort_Instructs_Students = Cohort_Instructs_Students()
+Cohort_Instructs_Students.cohort_people()
