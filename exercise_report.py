@@ -28,8 +28,8 @@ class Exercise_Report:
             """)
             all_exercises = db_cursor.fetchall()
 
-            print("Exercises: ")
-            print(f'  -- Javascript')
+            print("\nExercises: \n")
+            print(f'  -- Javascript --')
             [print(f'   * {e}') for e in all_exercises if e.language == "Javascript"]
-            print(f'  -- React')
+            print(f'  -- React --')
             [print(f'   * {e}') for e in all_exercises if e.language == "React"]

@@ -27,5 +27,5 @@ class Cohort_Report:
             """)
 
             all_cohorts = db_cursor.fetchall()
-            print("Cohorts: ")
+            print("\nCohorts: \n")
             [print(f'  * {c}') for c in all_cohorts]

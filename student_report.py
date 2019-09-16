@@ -41,5 +41,5 @@ class Student_Reports:
             """)
 
             all_students = db_cursor.fetchall()
-            print("Students: ")
+            print("\nStudents: \n")
             [print(f'  * {s}') for s in all_students]
