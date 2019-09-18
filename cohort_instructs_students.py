@@ -37,9 +37,31 @@ class Cohort_Instructs_Students:
                     cohort_dict[cohort_name]['Students'].add(student_name)
                     cohort_dict[cohort_name]['Instructors'].add(instructor_name)
 
-            for cohort, persons in cohort_dict.items():
-                print(f'{cohort}: ')
-                for type, peoples in persons.items():
-                    print(f'  {type}: ')
-                    for person in peoples:
-                        [print(f'    *{person} is a student in {cohort}.') if type == "Students" else print(f'    *{person} is an instructor for {cohort}.')]
+            # for cohort, persons in cohort_dict.items():
+            #     print(f'{cohort}: ')
+            #     for type, peoples in persons.items():
+            #         print(f'  {type}: ')
+            #         for person in peoples:
+            #             [print(f'    *{person} is a student in {cohort}.') if type == "Students" else print(f'    *{person} is an instructor for {cohort}.')]
+
+            {
+              print(f'{c}: '): {
+                print(f'  {t}: '): [
+                  print(f'    *{person} is a student in {c}.') if t == "Students" else print(f'    *{person} is an instructor for {c}.')
+                for person in ppls
+                ]
+                for t, ppls in p.items()
+                }
+                for c, p in cohort_dict.items()
+            }
+
+            # {
+            #   print(f'    *{person} is a student in {c}.') if t == "Students" else print(f'    *{person} is an instructor for {c}.'): {
+            #     print(f'  {t}: '): {
+            #       print(f'{c}: ')
+            #     }
+            #   }
+            #   for c, p in cohort_dict.items()
+            #   for t, ppls in p.items()
+            #   for person in ppls
+            # }
